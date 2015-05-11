@@ -1,0 +1,26 @@
+{
+  "description" : "Modifies the interval values which the meter uses to collect certain metrics",
+  "icon" : "icon.png",
+  "command" : "boundary-meter init.lua",
+  "command_lua" : "boundary-meter init.lua",
+  "postExtract" : "",
+  "postExtract_lua" : "",    
+
+  "paramArray" : { "itemTitle" : ["probe"], "schemaTitle" : "Match String"},
+  "paramSchema" : [
+    {
+      "title" : "Probe",
+      "name" : "probe",
+      "description" : "The name of the metric collection interval to change",
+      "type" : "string",
+      "required" : true
+    },
+    {
+      "title": "Interval",
+      "name": "ms",
+      "description": "The new value to apply to the interval",
+      "type": "string",
+      "required": true
+    }
+  ]
+}

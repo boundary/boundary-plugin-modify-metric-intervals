@@ -1,0 +1,17 @@
+{
+   "items": [
+      {
+         "probe" : "proc",
+         "ms": "3000"
+      },
+      {
+         "probe" : "net",
+         "ms": "1000"
+      },
+      {
+         "probe" : "user",
+         "ms": "1000"
+      }
+   ],
+   "pollInterval": 1000
+}
